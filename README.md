@@ -1,1 +1,17 @@
-# code-6-hallow-triangle
+#include<stdio.h>
+int main(){
+    int n,i,j;
+    printf("enter the size of the matrix:\n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+      for(j=1;j<=n;j++){
+          if(i==j||i==n||j==1){
+              printf(" *");
+          }else{
+              printf("  ");
+          }
+      }
+      printf("\n");
+    }      
+      return 0;
+}
